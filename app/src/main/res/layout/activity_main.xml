@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005a8d"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitulo"
+        android:layout_marginBottom="36dp"
+        android:hint="Codigo: 2113110108"
+        android:textColorHint="#FFA500"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCorreo"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Registro de Cuenta de Correo Electrónico"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCodigo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <EditText
+        android:id="@+id/editTeorreoIntitucional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTeorreoIntitucional"
+        android:layout_marginBottom="68dp"
+        android:hint="Corrreo Intitucional"
+        android:textColorHint="#FFA500"
+        app:layout_constraintBottom_toTopOf="@+id/editCorreodelAlumno"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editCorreodelAlumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editCorreodelAlumno"
+        android:layout_marginBottom="36dp"
+        android:hint="2113110108.@utels.edu.pe"
+        android:textColorHint="#FFA500"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTelefano"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCorreo"
+        android:layout_marginBottom="68dp"
+        android:hint="Codigo : 2113110108@untels.edu.pe"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFA500"
+        app:layout_constraintBottom_toTopOf="@+id/editSoporte"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editSoporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editSoporte"
+        android:layout_marginBottom="48dp"
+        android:hint="Sistemas.av@utels.edu.pe"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFA500"
+        app:layout_constraintBottom_toTopOf="@+id/editTeorreoIntitucional"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editTextTelefano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTelefano"
+        android:layout_marginBottom="52dp"
+        android:hint="Telefano: 925667408"
+        android:inputType="textPassword"
+        android:textColorHint="#FFA500"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCrearCuenta"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/buttonCrearCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCrearCuenta"
+        android:layout_marginBottom="4dp"
+        android:background="#0096d6"
+        android:text="Crear Cuenta"
+        android:textColorHint="#FFA500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
